@@ -1,0 +1,29 @@
+# Node
+node_modules/
+.env
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Netlify
+.netlify/
+
+# Railway
+railway.json
+
+#importaciones
+importarCurso.js
+importarMateriales.js
+importarProductos.js

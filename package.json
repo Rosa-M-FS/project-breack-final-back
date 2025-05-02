@@ -1,0 +1,40 @@
+{
+  "name": "project-breack-final-back",
+  "version": "1.0.0",
+  "description": "Project Breack Final Tienda Artesanal",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosa-M-FS/s2324_Back.git"
+  },
+  "keywords": [
+    "react",
+    "backend",
+    "artesania",
+    "crochet",
+    "bordado",
+    "vite"
+  ],
+  "author": "Rosa M. López Robles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rosa-M-FS/s2324_Back/issues"
+  },
+  "homepage": "https://github.com/Rosa-M-FS/s2324_Back#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.1",
+    "moongose": "^1.0.0",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
