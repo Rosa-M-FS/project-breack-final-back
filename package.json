@@ -4,7 +4,9 @@
   "description": "Project Breack Final Tienda Artesanal",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
