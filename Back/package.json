@@ -2,7 +2,7 @@
   "name": "project-breack-final-back",
   "version": "1.0.0",
   "description": "Project Breack Final Tienda Artesanal",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "test",
     "start": "node src/index.js",
