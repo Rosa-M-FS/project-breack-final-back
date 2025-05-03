@@ -1,3 +1,4 @@
+const product = require("../models/product");
 const Product = require ("../routes/products");
 
 exports.getProducts = async (req,res) =>{
@@ -19,7 +20,7 @@ exports.getProductsById = async (req,res)=>{
       }
 };
 
-exports.createProduct = async (req,res)=>{
+exports.createProducts = async (req,res)=>{
     try {
         const producto = new Product(req.body);
         await producto.save();
@@ -47,4 +48,14 @@ exports.deleteProducts = async (req,res) =>{
       } catch (error) {
         res.status(500).json({ msg: "Error al borrar producto", error });
       }
+}
+
+exports.getCategory = async (req,res)=>{
+    const {categoria}=req.params.categoria.trim().toLowerCase();
+    try{
+        const productos = await Product.find({categoria:categoria});
+        res.json(productos);
+      } catch (error) {
+        res.status(500).json({ msg: "Error al obtener productos por categoria", error });
+    }
 }
