@@ -1,11 +1,13 @@
-const product = require("../models/product");
-const Product = require ("../routes/products");
+const Product = require("../models/product");
+
 
 exports.getProducts = async (req,res) =>{
     try {
         const productos = await Product.find();
+        console.log("Productos:", productos); 
         res.json(productos);
       } catch (error) {
+        console.error("Error en getProducts:", error);
         res.status(500).json({ msg: "Error al obtener productos", error });
       }
 }
