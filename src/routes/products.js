@@ -17,6 +17,6 @@ router.put("/:id", auth, isAdmin, updateProducts);
 
 router.delete("/:id", auth, isAdmin, deleteProducts);
 
-router.get("/products/category/:categoria",getCategory);
+router.get("/category/:categoria",getCategory);
 
 module.exports=router;

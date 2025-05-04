@@ -56,6 +56,7 @@ exports.getCategory = async (req,res)=>{
     const categoria=req.params.categoria.trim();
     try{
         const productos = await Product.find({categoria:{$regex:`^${categoria}$`,$options:"i"}});
+        console.log("productos encontrados",productos);
         res.json(productos);
       } catch (error) {
         res.status(500).json({ msg: "Error al obtener productos por categoria", error });
