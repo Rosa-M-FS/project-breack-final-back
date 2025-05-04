@@ -10,3 +10,4 @@ const cursoSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 module.exports = mongoose.model("Curso", cursoSchema);
+
