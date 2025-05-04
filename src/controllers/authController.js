@@ -12,7 +12,7 @@ exports.login = async (req,res)=>{
         if(!validPass) return res.status(400).json({msg:"Usuario o contraseña incorrectos"})
     
         const token = jwt.sign(
-            { id: usuario._id, esAdmin: usuario.esAdmin },
+            { id: usuario._id, isAdmin: usuario.isAdmin },
             process.env.JWT_SECRET,
             { expiresIn: "1h" }
             );
@@ -23,7 +23,7 @@ exports.login = async (req,res)=>{
                 id: usuario._id,
                 nombre: usuario.nombre,
                 email: usuario.email,
-                esAdmin: usuario.esAdmin,
+                isAdmin: usuario.isAdmin,
             }
             });
     
