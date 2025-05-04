@@ -30,14 +30,14 @@ En ella el usuario debe poder:
     - Gestión de productos, pedidos y cursos
 - Persistencia de datos con MongoDB Atlas
 - Autenticación JWT (Node + express)
-- Frontend en React (rutas protegidas)
+- Frontend en React
 - Estilo responsive. Uso de CSS Modules
 
 ## Tecnologías utilizadas
 **Backend:** 
 -Node
 -Express
--MondoDB
+-MongoDB Atlas
 **Frontend:**
 -React
 -CSS Modules
@@ -62,13 +62,16 @@ En ella el usuario debe poder:
 -Visualización de productos
 -Compra de productos
 -Wishlist
--Visualización historial de pedidos
+-Panel user
+  ·Visualización historial de pedidos
+  ·Wishlist
+  ·Datos
 
 ## Admin
 admin@gmail.com
 contraseña:admin
 
-## Users
+## Users Ejemplo
 rosa@gmail.com
 contraseña:rosa
 
@@ -77,7 +80,7 @@ contraseña:sara
 
 ## Linea futura
 
-completar panel admin (pedidos, materiales, cursos pasados, organización agenda)
+panel admin (pedidos, materiales, cursos pasados, organización agenda)
 
 completar perfil usuario, acceso a pedidos pasados, solicitud de cursos, opcion de solicitar productos elaborados bajo pedido eligiendo entre los materiales disponibles
 
@@ -100,3 +103,11 @@ Perfeccionar adaptación a distintos dispositivos
     App.jsx
     main.jsx
 
+## Enlaces
+https://github.com/Rosa-M-FS/project-break-final-front.git
+
+https://github.com/Rosa-M-FS/project-breack-final-back.git
+
+https://rosesartesanalshop.netlify.app/
+
+https://project-breack-final-back-production.up.railway.app/
