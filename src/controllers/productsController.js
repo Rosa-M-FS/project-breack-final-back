@@ -53,9 +53,9 @@ exports.deleteProducts = async (req,res) =>{
 }
 
 exports.getCategory = async (req,res)=>{
-    const categoria=req.params.categoria.trim();
+    const categoria=req.params.categoria.trim().toLowerCase();
     try{
-        const productos = await Product.find({categoria:{$regex:`^${categoria}$`,$options:"i"}});
+        const productos = await Product.find({categoria:categoria});
         console.log("productos encontrados",productos);
         res.json(productos);
       } catch (error) {
