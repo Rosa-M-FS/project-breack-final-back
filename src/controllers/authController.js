@@ -36,13 +36,13 @@ exports.login = async (req,res)=>{
 exports.register = async (req,res)=>{
     try {
         const { nombre, email, password } = req.body;
-        const userExist = await Usuario.findOne({ email });
+        const userExist = await User.findOne({ email });
         if (userExist) return res.status(400).json({ msg: "El email ya está registrado" });
     
         const salt = await bcrypt.genSalt(10);
         const hash = await bcrypt.hash(password, salt);
     
-        const nuevoUsuario = new Usuario({ nombre, email, password: hash });
+        const nuevoUsuario = new User({ nombre, email, password: hash });
         await nuevoUsuario.save();
     
         res.status(201).json({ msg: "Usuario registrado con éxito" });
